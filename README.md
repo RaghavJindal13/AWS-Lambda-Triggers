@@ -1,7 +1,11 @@
 <h1 align="center">
- <img src="https://user-images.githubusercontent.com/53964007/118356057-14df5c80-b591-11eb-8635-6acb06a9406b.png" width="40" height="40" /> AWS Lambda
+ <img src="https://images.squarespace-cdn.com/content/v1/51814c87e4b0c1fda9c1fc50/1528473310893-RH0HG7R5C0QURMFQJBSU/ke17ZwdGBToddI8pDm48kOyctPanBqSdf7WQMpY1FsRZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpyD4IQ_uEhoqbBUjTJFcqKvko9JlUzuVmtjr1UPhOA5qkTLSJODyitRxw8OQt1oetw/600px-AWS_Lambda_logo.svg.png" width="50" height="50" /> AWS Lambda
 </h1>
-> A collection of AWS lambda functions which can be used in different scenarios for the automation purpose.
+
+
+AWS Lambda provides you a serverless architecture and allows you to run a piece of code in the cloud after an event trigger is activated.
+
+<br></br>
 <table>
   <tr>
     <th colspan=2>Execution Role (Common Execution Role Available)</th>
@@ -27,3 +31,20 @@
     <td>Grants permission for X-ray to to upload trace data to debug and analyze.</td>
   </tr>
 </table>
+
+
+## VPC
+```
+1. When you enable VPC, your Lambda function will lose default internet access
+2. If you require external internet access for your function, ensure that your security group allows outbound connections
+   and that your VPC has a NAT gateway
+``` 
+## Concurrency
+~~~
+1. Concurrent Execution refers to the execution of number of function at a given time. By default the limit is 1000 across all function within a given region
+2. AWS Lambda keeps 100 for the unreserved function
+3. So, if there are 1000 then you can select from 900 and reserve concurrency for selected function and rest 100 is used for the unreserved function
+~~~
+
+
+

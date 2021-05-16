@@ -54,4 +54,25 @@ AWS Lambda runs your backend code on its own AWS compute fleet of Amazon EC2 ins
 2. DLQ instruct lamnda to send unprocessed events to AWS SQS or AWS SNS
 3. DLQ helps you troubleshoot and examine the unprocessed request.
 ~~~
+## Cron Job
+~~~
+1. Cron Jobs allow you to automate certain commands or scripts on your server to complete repetitive tasks automatically.
+2. Cron Job can be set to run by 15 minute or hourly increments, a day of the week or month, or any combination of these.
+3. This means that you can trigger the Lambda function automatically fter every time interval which is specified.
+4. rate(1 day) OR cron(0 17 ? * MON-FRI *)  --0 mins 17hrs every month mon to fri every year.
+~~~
+## Throttle
+~~~
+1. Throttle will set reserved concurrency of the function to zero and it will throttle all future invocation
+2. If the function is throttled then it will fail to run
+3. If the fucntion is ran from Lambda console then it will throw "Calling the Invoke API failed with message: Rate Exceeded."
+~~~
+## Invoke Lambda function from another Lambda Function
+~~~
+1. create two lambda functions and add awsLambdaRole in the existing basic rule
+2. A Lambda can invoke another Lambda.
+3. A Lambda in one region can invoke another lambda in other region
+4. A Lambda can invoke same Lambda
+5. Invoke same Lamba with different version
+~~~
 

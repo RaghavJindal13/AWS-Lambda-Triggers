@@ -3,7 +3,9 @@
 </h1>
 
 
-AWS Lambda provides you a serverless architecture and allows you to run a piece of code in the cloud after an event trigger is activated.
+AWS Lambda provides you a serverless architecture and allows you to run a piece of code in the cloud after an event trigger is activated.\
+AWS Lambda is a zero-administration compute platform for the back-end web developers that runs your code for you on the AWS Cloud and provides you with a fine-grained pricing structure.\
+AWS Lambda runs your backend code on its own AWS compute fleet of Amazon EC2 instances across multiple Availbility zones in a region which provides the high avilability,security,performance,and scalability of AWS infrastructure.
 
 <br></br>
 <table>
@@ -46,5 +48,10 @@ AWS Lambda provides you a serverless architecture and allows you to run a piece 
 3. So, if there are 1000 then you can select from 900 and reserve concurrency for selected function and rest 100 is used for the unreserved function
 ~~~
 
-
+## DLQ (Dead Letter Queue)
+~~~
+1. Failed Lambda is invoked twice by default and the event is discarded.
+2. DLQ instruct lamnda to send unprocessed events to AWS SQS or AWS SNS
+3. DLQ helps you troubleshoot and examine the unprocessed request.
+~~~
 

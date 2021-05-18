@@ -1,0 +1,16 @@
+import boto3
+
+def lambda_handler(event, context):
+    s3 = boto3.client("s3")
+    bucket = "bucket-name"
+    key = "filename.txt"
+    file = s3.get_object(Bucket = bucket, Key = key)
+    paragraph = str(file['Body'].read())
+
+    comprehend = boto3.client("comprehend")
+
+    #Extracting sentiments using comprehend
+    sentiment = comprehend.detect_sentiment(Text = paragraph, LanguageCode = "en")
+    print(sentiment)
+     
+    return 'Thanks'

@@ -76,3 +76,11 @@ AWS Lambda runs your backend code on its own AWS compute fleet of Amazon EC2 ins
 5. Invoke same Lamba with different version.
 ~~~
 
+## EC2 instance state and status check via Lambda function
+~~~
+1. Check state and ststus of all ec2 instances.
+2. Get the state change notification in s3 bucket.
+3. Trigger email notification of ec2 instance state change.
+4. SSH into ec2 instance via lambda function.
+5. Fetch date and time of stopped ec2 instance.
+~~~

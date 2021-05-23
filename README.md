@@ -87,5 +87,6 @@ AWS Lambda runs your backend code on its own AWS compute fleet of Amazon EC2 ins
 ## Trigger email notification
 ~~~
 1. Flow will be like whenever we make a cnagse in s3 bucker lambda will trigger SES.
-2. Under the S3 bucket properties enable events
+2. Under the S3 bucket properties enable events.
+3. You can also send the file which have been modified or added in the mail.
 ~~~

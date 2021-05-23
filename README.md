@@ -84,3 +84,8 @@ AWS Lambda runs your backend code on its own AWS compute fleet of Amazon EC2 ins
 4. SSH into ec2 instance via lambda function.
 5. Fetch date and time of stopped ec2 instance.
 ~~~
+## Trigger email notification
+~~~
+1. Flow will be like whenever we make a cnagse in s3 bucker lambda will trigger SES.
+2. Under the S3 bucket properties enable events
+~~~

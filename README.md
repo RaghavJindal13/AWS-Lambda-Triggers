@@ -43,7 +43,7 @@ AWS Lambda runs your backend code on its own AWS compute fleet of Amazon EC2 ins
 ``` 
 ## Concurrency
 ~~~
-1. Concurrent Execution refers to the execution of number of function at a given time. By default the limit is 1000 across all function within a given region.
+1. Concurrent Execution refers to the execution of number of function at a given time. By default the limit\ is 1000 across all function within a given region.
 2. AWS Lambda keeps 100 for the unreserved function.
 3. So, if there are 1000 then you can select from 900 and reserve concurrency for selected function and rest 100 is used for the unreserved function.
 ~~~

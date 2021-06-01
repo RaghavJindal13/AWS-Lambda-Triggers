@@ -10,7 +10,7 @@ AWS Lambda runs your backend code on its own AWS compute fleet of Amazon EC2 ins
 <br></br>
 <table>
   <tr>
-    <th colspan=2>Execution Role (Common Execution Role Available)</th>
+    <th colspan=2>Execution Role (Common Execution Role Available).</th>
   </tr>
   <tr>
     <td><b>AWSLambdaBasicExecutionRole</b></td>
